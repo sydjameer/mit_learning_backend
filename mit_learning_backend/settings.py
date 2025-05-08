@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = '%)=+6!ou+zw0k_zg4p-hv$k5(xqq7(e(uhz*f2&&jj(b1f1b8h'
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sglittlekhalifas.pythonanywhere.com']
 AUTH_USER_MODEL = 'core.User'
 
 STATIC_URL = '/static/'
@@ -44,7 +44,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "https://v0-kids-learning-app-page.vercel.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
