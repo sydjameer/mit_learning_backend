@@ -9,8 +9,15 @@ SECRET_KEY = '%)=+6!ou+zw0k_zg4p-hv$k5(xqq7(e(uhz*f2&&jj(b1f1b8h'
 DEBUG = True
 ALLOWED_HOSTS = []
 AUTH_USER_MODEL = 'core.User'
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Media files (Uploaded Images)
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 INSTALLED_APPS = [
     'core',
